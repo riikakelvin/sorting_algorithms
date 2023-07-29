@@ -17,11 +17,11 @@ void swap_ints(int *a, int *b)
 /**
  * bubble_sort - Sorts an array of integers in ascending order.
  * @array: An array of integers to sort.
- * @size: Size of the array..
+ * @size: Size of the array.
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t k, len = size;
+	size_t i, len = size;
 	bool bubbly = false;
 
 	if (array == NULL || size < 2)
@@ -30,11 +30,11 @@ void bubble_sort(int *array, size_t size)
 	while (bubbly == false)
 	{
 		bubbly = true;
-		for (k = 0; k < len - 1; k++)
+		for (i = 0; i < len - 1; i++)
 		{
-			if (array[k] > array[k + 1])
+			if (array[i] > array[i + 1])
 			{
-				swap_ints(array + k, array + k + 1);
+				swap_ints(array + i, array + i + 1);
 				print_array(array, size);
 				bubbly = false;
 			}
@@ -42,4 +42,3 @@ void bubble_sort(int *array, size_t size)
 		len--;
 	}
 }
-
