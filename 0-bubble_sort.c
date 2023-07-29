@@ -2,8 +2,8 @@
 
 /**
  * swap_ints - Swaps two integers in an array.
- * @a: First integer to swap.
- * @b: Second integer to swap.
+ * @a: The first integer to swap.
+ * @b: The second integer to swap.
  */
 void swap_ints(int *a, int *b)
 {
@@ -15,8 +15,8 @@ void swap_ints(int *a, int *b)
 }
 
 /**
- * bubble_sort - Sort an array of integers (A-Z) ascending order.
- * @array: An array of integers to sort.
+ * bubble_sort - Sorts an array of integers in (A-Z) ascending order.
+ * @array: An array of integers for sorting.
  * @size: Size of the array.
  */
 void bubble_sort(int *array, size_t size)
@@ -42,4 +42,3 @@ void bubble_sort(int *array, size_t size)
 		len--;
 	}
 }
-
